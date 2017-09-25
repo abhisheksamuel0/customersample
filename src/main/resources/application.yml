@@ -1,0 +1,18 @@
+server:
+  applicationContextPath: /
+  adminContextPath: /admin
+  applicationConnectors:
+  - type: http
+    port: 8080
+  adminConnectors:
+  - type: http
+    port: 8081
+
+mongoHost: localhost
+mongoPort: 27017
+mongoDB: decipher-customer
+collectionName: customer
+
+swagger:
+  resourcePackage: com.decipherzone.resources
+  uriPrefix: /
